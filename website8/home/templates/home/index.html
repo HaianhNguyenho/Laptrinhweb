@@ -1,0 +1,25 @@
+{% extends "home/base.html" %}
+{% block webtitle %}
+Thông tin sinh viên!
+{% endblock %}
+{% block webcontent %}
+<h1> THÔNG TIN SINH VIÊN! </h1>
+<table border="1">
+<tr>
+<th> Họ tên SV </th>
+<th> MSSV </th>
+<th> Ngày sinh </th>
+<th> Lớp </th>
+<th> Hình </th>
+</tr>
+{% for i in auF %}
+<tr>
+<td> {{i.name}} </tb>
+<td> {{i.mssv}} </td>
+<td> {{i.birth_day}} </td>
+<td> {{i.lop}} </td>
+<td> {{i.image}} </td>
+</tr>
+{% endfor%}
+</table>
+{% endblock%}
